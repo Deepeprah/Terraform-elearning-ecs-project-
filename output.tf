@@ -1,17 +1,18 @@
-//export output region 
+
+# export output region 
 output "region" {
   value = var.region
 }
-
+# export environment
 output "environment" {
   value = var.environment
 }
-
+# export projrct nsmr
 output "project_name" {
   value = var.project_name
 }
 
-// export vpc output
+#export vpc output
 output "vpc_id" {
   value = aws_vpc.elearning-vpc.id
 }
