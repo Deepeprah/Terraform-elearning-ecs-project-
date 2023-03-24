@@ -1,47 +1,16 @@
 // environment variables 
 variable "region" {}
-
-variable "project_name" {
-  description = "project_name"
-  type        = string
-}
-
+variable "project_name" {}
 variable "environment" {}
 
 // vpc variable
-variable "elearning-vpc_cidr" {
-  description = "vpc-cidr-block"
-  type        = string
-}
+variable "elearning-vpc_cidr" {}
+variable "public_subnet_az1_cidr" {}
+variable "public_subnet_az2_cidr" {}
+variable "private_app_subnet_az1_cidr" {}
+variable "private_app_subnet_az2_cidr" {}
+variable "private_data_subnet_az1_cidr" {}
+variable "private_data_subnet_az2_cidr" {}
 
-
-variable "public_subnet_az1_cidr" {
-  description = "public subnet az1 cidr block"
-  type        = string
-}
-
-
-variable "public_subnet_az2_cidr" {
-  description = "public subnet az2 cidr block"
-  type        = string
-}
-
-variable "private_app_subnet_az1_cidr" {
-  description = "private app subnet az1 cidr block"
-  type        = string
-}
-
-variable "private_app_subnet_az2_cidr" {
-  description = "private app subnet az2 cidr block"
-  type        = string
-}
-
-variable "private_data_subnet_az1_cidr" {
-  description = "private data subnet az1 cidr block"
-  type        = string
-}
-
-variable "private_data_subnet_az2_cidr" {
-  description = "private data subnet az2 cidr block"
-  type        = string
-}
+//security group
+variable "ingress" {}
